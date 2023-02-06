@@ -75,7 +75,7 @@
     width: 1230px;
     padding-top: 40px;
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 60px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -106,7 +106,7 @@
     margin-right: 13.5px;
 }
 
-.products li:last-child {
+.products li:nth-child(4n) {
     margin-right: 0;
 }
 
@@ -178,6 +178,22 @@
     background: url("../images/ico-express.svg") 2px 3px no-repeat;
     bottom: 5px;
     left: 4px;
+}
+
+.product_btn {
+    text-align: center;
+}
+
+.more_btn {
+    display: inline-block;
+    margin-top: 16px;
+    border: 1px solid #d3d3d3;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 12px;
+    color: rgba(34,34,34,.8);
+    cursor: pointer;
+    margin: 0 auto;
 }
 
 /* banner 영역 */
