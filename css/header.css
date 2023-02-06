@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* header 영역 */
+header {
+    width: 100%;
+    height: 130px;
+}
+
+#header_inner {
+    height: 130px;
+    width: 100%;
+    padding: 8px 40px 0 40px;
+    margin: 0 auto;
+    position: fixed;
+    box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+    background: #fff;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    min-width: 1600px;
+}
+
+/* top_menu 영역 */
+#top_menu {
+    height: 19px;
+}
+
+#top_menu a {
+    font-size: 12px;
+    color: rgba(34, 34, 34, .8);
+}
+
+#top_menu ul {
+    float: right;
+}
+
+#top_menu li {
+    float: left;
+    padding-left: 20px;
+}
+
+/* main_menu 영역 */
+#main_menu {
+    margin-top: 20px;
+    height: 26px;
+}
+
+#main_menu a {
+    font-size: 18px;
+}
+
+#main_menu strong {
+    font-weight: 700;
+}
+
+#main_menu h1 img {
+    width: 120px;
+    height: 24px;
+    float: left;
+}
+
+#main_menu nav img {
+    width: 20px;
+    height: 20px;
+}
+
+#main_menu ul {
+    padding-top: 4px;
+    float: right;
+}
+
+#main_menu li {
+    float: left;
+    padding-left: 30px;
+}
+
+/* tap_menu 영역 */
+#tap_menu {
+    margin-top: 7px;
+}
+
+#tap_menu a {
+    font-size: 16px;
+    padding-bottom: 6px;
+}
+
+#tap_menu a:focus {
+    font-weight: 700;
+    border-bottom: 2px solid black;
+}
+
+#tap_menu ul {
+    padding: 24px 0;
+}
+
+#tap_menu li {
+    float: left;
+    padding-right: 26px;
+}
