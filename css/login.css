@@ -11,7 +11,7 @@ header {
 
 #header_inner {
     height: 100px;
-    box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+    box-shadow: none;
 }
 
 #content {
