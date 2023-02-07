@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import "header.css";
+@import "footer.css";
+
+/* 오버라이딩 */
+header {
+    width: 100%;
+    height: 100px;
+}
+
+#header_inner {
+    height: 100px;
+    box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+}
+
+#content {
+    width: 100%;
+    height: 750px;
+}
+
+/* login_area 영역 */
+#login_area {
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#login_area_inner {
+    padding: 30px 10px;
+    height: 100%;
+    border: 1px solid black;
+}
+
+#login_area_inner h2 {
+    width: 250px;
+    height: 56px;
+    margin: 0 auto;
+}
+
+#login_area_inner img {
+    width: 100%;
+    height: 100%;
+}
+
+#login_area_inner form {
+    width: 400px;
+    height: 210px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#login_area_inner form input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#login_area_inner ul {
+    text-align: center;
+}
+
+#login_area_inner li {
+    display: inline-block;
+}
+
+#login_area_inner li::after {
+    padding: 0 10px;
+    content: " | ";
+}
+
+#login_area_inner li:last-child::after {
+    padding: 0;
+    content: "";
+}
+
+#btn_area {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#btn_area button {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    margin-top: 10px;
+}
+
+#btn_area img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 15px;
+}
