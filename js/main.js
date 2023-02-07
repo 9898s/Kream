@@ -13,7 +13,7 @@ $(() => {
     // 스크롤 시 #top_btn 나타내기
     $(window).scroll(function () {
         let headerHeight = $("header").height();
-        $(this).scrollTop() >= headerHeight ? $("#top_btn").show('normal') : $("#top_btn").hide('normal');
+        $(this).scrollTop() >= headerHeight ? $("#top_btn").fadeIn('slow') : $("#top_btn").fadeOut('normal');
     });
 
     // 배너 랜덤 이미지
