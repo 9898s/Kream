@@ -231,6 +231,7 @@ footer {
     max-width: 605px;
     font-size: 12px;
     letter-spacing: -.06px;
+    line-height: 1.3em;
     color: rgba(34, 34, 34, .4);
 }
 
