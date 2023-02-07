@@ -75,6 +75,10 @@ header {
     padding: 8px 0;
 }
 
+input::placeholder {
+    color: #ccc;
+}
+
 #login_area_inner ul {
     text-align: center;
 }
@@ -127,10 +131,14 @@ header {
 #btn_area button a {
     display: inline-block;
     width: 100%;
-    height: 15px;
+    height: 100%;
     font-weight: 600;
     font-size: 16px;
     color: #222;
+}
+
+#btn_area button p {
+    margin-top: 15px;
 }
 
 #btn_area img {
