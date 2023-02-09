@@ -62,7 +62,7 @@ header {
     margin-bottom: 20px;
 }
 
-#login_area_inner form input:focus {
+#login_area_inner form .input_txt:focus {
     outline: 0;
     border-bottom: 1px solid #000;
 }
