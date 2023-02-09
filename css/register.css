@@ -231,6 +231,7 @@ input::placeholder {
     margin-bottom: 5px;
     border-radius: 10px;
     cursor: pointer;
+    color: #333;
 }
 
 #shoes_footer {
@@ -250,7 +251,7 @@ input::placeholder {
     transform: translateX(-50%);
     padding: 10px 40px;
     border-radius: 10px;
-    cursor: pointer;
     color: #ccc;
+    cursor: default;
 }
 /* shoes_size 영역 종료 */
