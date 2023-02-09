@@ -6,12 +6,21 @@ $(() => {
 
     // 신발 사이즈 팝업
     $(document).mouseup(function (event) {
-        if($('#layout').has(event.target).length === 0) {
+        if ($('#shoes_size').has(event.target).length === 0) {
+            $('body').css('overflow', 'auto');
+            $('#shoes_size').hide();
             $('#layout').hide();
         }
     });
 
     $('#register_shoes').click(function () {
+        $('#shoes_size').css({
+            top: (($(window).height() - $('#shoes_size').outerHeight()) / 2 + $(window).scrollTop()) + 'px',
+            left: (($(window).width() - $('#shoes_size').outerWidth()) / 2 + $(window).scrollLeft()) + 'px'
+        });
+
+        $('body').css('overflow', 'hidden');
+        $('#shoes_size').show();
         $('#layout').show();
     });
 
@@ -39,9 +48,16 @@ $(() => {
     });
 
     $('#shoes_footer p').click(function () {
-        if(size != 0) {
+        if (size != 0) {
             $('.form_input').val(size);
+            $('body').css('overflow', 'auto');
+            $('#shoes_size').hide();
             $('#layout').hide();
         }
+    });
+
+    // 더보기 클릭
+    $('.more').click(function () {
+        $(this).next().toggle();
     });
 });

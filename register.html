@@ -16,38 +16,37 @@
 
 <body>
   <!-- layout 영역 -->
-  <div id="layout">
-    <section id="shoes_size">
-      <div id="shoes_header">
-        <h4>사이즈 선택</h4>
-      </div>
-      <div id="shoes_body">
-        <ul>
-          <li>215</li>
-          <li>220</li>
-          <li>225</li>
-          <li>230</li>
-          <li>235</li>
-          <li>240</li>
-          <li>245</li>
-          <li>250</li>
-          <li>255</li>
-          <li>260</li>
-          <li>265</li>
-          <li>270</li>
-          <li>275</li>
-          <li>280</li>
-          <li>285</li>
-          <li>290</li>
-          <li>295</li>
-          <li>300</li>
-        </ul>
-      </div>
-      <div id="shoes_footer">
-        <p>확인</p>
-      </div>
-    </section>
-  </div>
+  <div id="layout"></div>
+  <section id="shoes_size">
+    <div id="shoes_header">
+      <h4>사이즈 선택</h4>
+    </div>
+    <div id="shoes_body">
+      <ul>
+        <li>215</li>
+        <li>220</li>
+        <li>225</li>
+        <li>230</li>
+        <li>235</li>
+        <li>240</li>
+        <li>245</li>
+        <li>250</li>
+        <li>255</li>
+        <li>260</li>
+        <li>265</li>
+        <li>270</li>
+        <li>275</li>
+        <li>280</li>
+        <li>285</li>
+        <li>290</li>
+        <li>295</li>
+        <li>300</li>
+      </ul>
+    </div>
+    <div id="shoes_footer">
+      <p>확인</p>
+    </div>
+  </section>
 
   <!-- header 영역 -->
   <header>
@@ -106,12 +105,36 @@
           <li>
             <input type="checkbox" id="terms_essential">
             <label for="terms_essential">[필수] 만 14세 이상이며 모두 동의합니다.</label>
-            <img src="images/plus.png" alt="더보기">
+            <img src="images/plus.png" alt="더보기" class="more">
+            <ul class="terms_more">
+              <li>
+                <input type="checkbox" id="terms_essential2">
+                <label for="terms_essential2">이용약관 동의</label>
+              </li>
+              <li>
+                <input type="checkbox" id="terms_essential3">
+                <label for="terms_essential3">개인정보 수집 및 이용 동의</label>
+              </li>
+            </ul>
           </li>
           <li>
             <input type="checkbox" id="terms_select">
             <label for="terms_select">[선택] 광고성 정보 수신에 모두 동의합니다.</label>
-            <img src="images/plus.png" alt="더보기">
+            <img src="images/plus.png" alt="더보기" class="more">
+            <ul class="terms_more">
+              <li>
+                <input type="checkbox" id="terms_select2">
+                <label for="terms_select2">앱 푸시</label>
+              </li>
+              <li>
+                <input type="checkbox" id="terms_select3">
+                <label for="terms_select3">문자 메시지</label>
+              </li>
+              <li>
+                <input type="checkbox" id="terms_select4">
+                <label for="terms_select4">이메일</label>
+              </li>
+            </ul>
           </li>
         </ul>
         <div id="register_btn">
