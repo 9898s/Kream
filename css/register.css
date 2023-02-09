@@ -4,6 +4,11 @@
 @import "footer.css";
 
 /* 오버라이딩 */
+body {
+    width: 100%;
+    height: 100%;
+}
+
 header {
     width: 100%;
     height: 100px;
@@ -17,6 +22,7 @@ header {
 #content {
     width: 100%;
     height: 700px;
+    position: relative;
 }
 
 h2 {
@@ -36,17 +42,19 @@ h3 {
     font-weight: bold;
 }
 
+input::placeholder {
+    color: #ccc;
+}
+
 /* 회원가입 영역 */
 #register_area {
-    width: 450px;
+    width: 400px;
     height: 100%;
-    background-color: red;
     margin: 0 auto;
 }
 
 #register_title {
     width: 100%;
-    background-color: blue;
 }
 
 #register_title h2 {
@@ -60,7 +68,6 @@ h3 {
 
 #register_form {
     width: 100%;
-    background-color: aqua;
 }
 
 #register_email {
@@ -76,4 +83,174 @@ h3 {
 #register_shoes {
     width: 100%;
     padding: 10px 0 14px 0;
+    position: relative;
 }
+
+#register_shoes input[type="text"] {
+    cursor: pointer;
+}
+
+#register_shoes > img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 37px;
+    right: -5px;
+}
+
+.form_input {
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    line-height: 22px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 8px 0;
+}
+
+.form_input:focus {
+    outline: 0;
+    border-bottom: 1px solid #000;
+}
+
+#register_terms li {
+    position: relative;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+#register_terms label {
+    cursor: pointer;
+}
+
+#register_terms input[type="checkbox"] {
+    appearance: none;
+    background: #fff;
+    cursor: pointer;
+    outline: 0;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #ccc;
+}
+
+#register_terms input[type="checkbox"]::after {
+    position: relative;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: none;
+    height: 40%;
+    left: 40%;
+    top: 20%;
+    transform: rotate(45deg);
+    width: 15%;
+}
+
+#register_terms input[type="checkbox"]:checked {
+    background: #000;
+}
+
+#register_terms input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+#register_terms li label {
+    position: absolute;
+    color: #222;
+    font-size: 14px;
+    top: 7px;
+    left: 40px;
+}
+
+#register_terms img {
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+}
+
+#register_btn {
+    width: 100%;
+}
+
+#register_btn input[type="button"] {
+    background-color: #ebebeb;
+    color: #fff;
+    cursor: default;
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* shoes_size 영역 시작 */
+#layout {
+    position: absolute;
+    width: 100%;
+    height: 1480px;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 100;
+    display: none;
+}
+
+#shoes_size {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 101;
+    width: 400px;
+    border-radius: 15px;
+}
+
+#shoes_header {
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    padding: 20px;
+}
+
+#shoes_header h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#shoes_body {
+    background-color: #fff;
+    border-radius: 0 0 0 0;
+}
+
+#shoes_body ul {
+    text-align: center;
+}
+
+#shoes_body li {
+    display: inline-block;
+    padding: 18px 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#shoes_footer {
+    position: relative;
+    background-color: #fff;
+    border-radius: 0 0 30px 30px;
+    padding: 20px 0 60px 0;
+    width: 100%;
+}
+
+#shoes_footer p {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ccc;
+}
+/* shoes_size 영역 종료 */
