@@ -49,7 +49,7 @@ $(() => {
 
     $('#shoes_footer p').click(function () {
         if (size != 0) {
-            $('.form_input').val(size);
+            $('.form_input_size').val(size);
             $('body').css('overflow', 'auto');
             $('#shoes_size').hide();
             $('#layout').hide();
@@ -59,5 +59,45 @@ $(() => {
     // 더보기 클릭
     $('.more').click(function () {
         $(this).next().toggle();
+    });
+
+    $('#terms_essential').click(function () {
+        let isChecked = $('#terms_essential').is(':checked');
+        isChecked ? $('.terms_checkbox').prop('checked', true) : $('.terms_checkbox').prop('checked', false);
+    });
+
+    // 더보기 체크박스
+    $('#terms_essential').click(function () {
+        let isChecked = $('#terms_essential').is(':checked');
+        isChecked ? $('.essential_checkbox').prop('checked', true) : $('.essential_checkbox').prop('checked', false);
+    });
+
+    $('#terms_select').click(function () {
+        let isChecked = $('#terms_select').is(':checked');
+        isChecked ? $('.select_checkbox').prop('checked', true) : $('.select_checkbox').prop('checked', false);
+    });
+
+    $('.essential_checkbox').click(function () {
+        let count = 0;
+
+        $('.essential_checkbox').each(function () {
+            if($(this).is(':checked')) {
+                count++;
+            }
+        });
+
+        count == 2 ? $('#terms_essential').prop('checked', true) :  $('#terms_essential').prop('checked', false);
+    });
+
+    $('.select_checkbox').click(function () {
+        let count = 0;
+
+        $('.select_checkbox').each(function () {
+            if($(this).is(':checked')) {
+                count++;
+            }
+        });
+
+        count == 3 ? $('#terms_select').prop('checked', true) :  $('#terms_select').prop('checked', false);
     });
 });
