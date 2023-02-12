@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+@import "header.css";
+@import "footer.css";
+
+/* 오버라이딩 */
+header {
+    width: 100%;
+    height: 100px;
+}
+
+#header_inner {
+    height: 100px;
+    box-shadow: none;
+}
+
+/* content 영역 */
+#content {
+    width: 100%;
+    height: 3500px;
+}
+
+#product_detail {
+    width: 1250px;
+    height: 2050px;
+    margin: 0 auto;
+}
+
+#product_detail_left {
+    float: left;
+    width: 48%;
+    height: 100%;
+    border-right: 1px solid #eee;
+}
+
+#product_detail_left_inner {
+    width: 560px;
+    height: 560px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: fixed;
+}
+
+#product_detail_left img {
+    width: 100%;
+    height: 100%;
+}
+
+#product_detail_right {
+    float: right;
+    width: 52%;
+    height: 100%;
+    padding: 0 34px;
+}
+
+#product_brand {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 19px;
+    padding-top: 1px;
+    margin-bottom: 9px;
+    font-size: 18px;
+    letter-spacing: -.27px;
+    font-weight: 800;
+    border-bottom: 2px solid #222;
+}
+
+.product_name_eng {
+    margin-bottom: 4px;
+    font-size: 18px;
+    letter-spacing: -.09px;
+    font-weight: 300;
+}
+
+.product_name_kor {
+    line-height: 17px;
+    font-size: 14px;
+    letter-spacing: -.21px;
+    color: rgba(34, 34, 34, .5);
+    margin-bottom: 25px;
+}
+
+#size_area {
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid #eee;
+}
+
+#size_area .size_kor {
+    float: left;
+    padding-top: 4px;
+    line-height: 16px;
+    font-size: 13px;
+    letter-spacing: -.07px;
+    color: rgba(34, 34, 34, .8);
+}
+
+#size_area .size_inch {
+    float: right;
+    font-weight: 600;
+}
+
+#trade_area {
+    width: 100%;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#trade_area .trade_recent {
+    float: left;
+    padding-top: 4px;
+    line-height: 16px;
+    font-size: 12px;
+    letter-spacing: -.07px;
+    color: rgba(34, 34, 34, .8);
+}
+
+#trade_area .trade_price {
+    float: right;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn {
+    width: 49.63%;
+    height: 60px;
+    color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.buy {
+    background-color: #ef6253;
+}
+
+.sell {
+    background-color: #41b979;
+}
+
+.btn_left {
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    position: relative;
+    float: left;
+}
+
+.btn_left p {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    letter-spacing: -.27px;
+}
+
+.btn_right {
+    width: 75%;
+    height: 100%;
+    float: right;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.btn_price {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.btn_buy_now {
+    font-size: 11px;
+    font-weight: 600;
+    color: hsla(0,0%,100%,.8);
+}
+
+#btn_like {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    padding: 20px 0;
+}
+
+#btn_like p {
+    text-align: center;
+    position: relative;
+}
+
+#btn_like span {
+    font-weight: 400;
+    color: #222;
+}
+
+#btn_like img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    left: 220px;
+}
