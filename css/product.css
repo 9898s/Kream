@@ -365,6 +365,7 @@ header {
 #guide_list {
     margin-top: 40px;
     border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
 }
 
 #guide_list li {
