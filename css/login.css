@@ -44,9 +44,10 @@ header {
 
 #login_area_inner form {
     width: 400px;
-    height: 275px;
+    height: 290px;
     margin: 0 auto;
     padding-top: 50px;
+    position: relative;
 }
 
 #login_area_inner form p {
@@ -59,7 +60,7 @@ header {
 
 #login_area_inner form input {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 #login_area_inner form .input_txt:focus {
@@ -147,4 +148,24 @@ input::placeholder {
     height: 20px;
     left: 15px;
     top: 14px;
+}
+
+.email_wrong {
+    display: block;
+    position: absolute;
+    line-height: 16px;
+    font-size: 11px;
+    color: #f15746;
+    top: 108px;
+    display: none;
+}
+
+.password_wrong {
+    display: block;
+    position: absolute;
+    line-height: 16px;
+    font-size: 11px;
+    color: #f15746;
+    top: 190px;
+    display: none;
 }

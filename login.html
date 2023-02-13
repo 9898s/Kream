@@ -57,10 +57,16 @@
         </h2>
 
         <form action="#">
-          <p>이메일 주소</p>
-          <input type="email" placeholder="예) kream@kream.co.kr" class="input_txt" required>
-          <p>비밀번호</p>
-          <input type="password" class="input_txt" required>
+          <p class="email_title">이메일 주소</p>
+          <input type="email" placeholder="예) kream@kream.co.kr" id="input_email" class="input_txt" required>
+          <span class="email_wrong">
+            이메일 주소를 정확히 입력해주세요.
+          </span>
+          <p class="pwd_title">비밀번호</p>
+          <input type="password" id="input_pwd" class="input_txt" required>
+          <span class="password_wrong">
+            영문, 숫자, 특수문자를 조합해서 입력해주세요. (8-16자)
+          </span>
           <input type="button" value="로그인" class="login_btn">
         </form>
 
