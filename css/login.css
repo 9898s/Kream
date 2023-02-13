@@ -151,7 +151,6 @@ input::placeholder {
 }
 
 .email_wrong {
-    display: block;
     position: absolute;
     line-height: 16px;
     font-size: 11px;
@@ -161,7 +160,6 @@ input::placeholder {
 }
 
 .password_wrong {
-    display: block;
     position: absolute;
     line-height: 16px;
     font-size: 11px;

@@ -261,3 +261,11 @@ input::placeholder {
     cursor: default;
 }
 /* shoes_size 영역 종료 */
+
+.email_wrong, .password_wrong {
+    position: absolute;
+    line-height: 16px;
+    font-size: 11px;
+    color: #f15746;
+    display: none;
+}
