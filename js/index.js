@@ -29,4 +29,58 @@ $(() => {
         $(this).css('background-color', bannerArray[randomIndex].backgroundColor);
         $(this).append('<a href="#"><img src="' + bannerArray[randomIndex].src + '" alt="고정 배너"></a>');
     });
+
+    // 상품 더보기 버튼 클릭
+    $('#just_dropped li').each(function (index) {
+        if(parseInt(index / 4) > 0) {
+            $(this).hide();
+        }
+    });
+    $('#most_popular li').each(function (index) {
+        if(parseInt(index / 4) > 0) {
+            $(this).hide();
+        }
+    });
+    $('#upcoming_release li').each(function (index) {
+        if(parseInt(index / 4) > 0) {
+            $(this).hide();
+        }
+    });
+
+    let moreArray = [0, 0, 0];
+    $('#just_dropped .product_btn').click(function () {
+        moreArray[0]++;
+        if(moreArray[0] == 2) {
+            $(this).hide();
+        }
+        $('#just_dropped li').each(function (index) {
+            if(parseInt(index / 4) == moreArray[0]) {
+                $(this).show();
+            }
+        });
+    });
+
+    $('#most_popular .product_btn').click(function () {
+        moreArray[1]++;
+        if(moreArray[1] == 2) {
+            $(this).hide();
+        }
+        $('#most_popular li').each(function (index) {
+            if(parseInt(index / 4) == moreArray[1]) {
+                $(this).show();
+            }
+        });
+    });
+
+    $('#upcoming_release .product_btn').click(function () {
+        moreArray[2]++;
+        if(moreArray[2] == 2) {
+            $(this).hide();
+        }
+        $('#upcoming_release li').each(function (index) {
+            if(parseInt(index / 4) == moreArray[2]) {
+                $(this).show();
+            }
+        });
+    });
 });
