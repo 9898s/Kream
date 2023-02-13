@@ -8,14 +8,14 @@ $(() => {
             $('#product_detail_left img').css({
                 position: 'absolute',
                 top: 726,
-                left: -17
+                left: -16
             });
         }
         else {
             $('#product_detail_left img').css({
                 position: 'fixed',
                 top: 60,
-                left: 217
+                left: 330
             });
         }
     });

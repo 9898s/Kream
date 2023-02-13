@@ -46,7 +46,7 @@ header {
     object-fit: contain;
     position: fixed;
     top: 60px;
-    left: 217px;
+    left: 330px;
 }
 
 #product_detail_right {
@@ -72,7 +72,7 @@ header {
     margin-bottom: 4px;
     font-size: 18px;
     letter-spacing: -.09px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .product_name_kor {
@@ -126,7 +126,7 @@ header {
 }
 
 .btn {
-    width: 49.63%;
+    width: 49.5%;
     height: 60px;
     color: #fff;
     border-radius: 10px;
@@ -360,7 +360,7 @@ header {
 }
 
 #notice_product {
-    margin-top: 40px;
+    margin-top: 30px;
     line-height: 16px;
     font-size: 12px;
     letter-spacing: -.05px;
@@ -381,7 +381,7 @@ header {
 }
 
 .empty_content {
-    width: 248px;
+    width: 285px;
     padding: 50px 0 120px 0;
     margin: 0 auto;
 }
