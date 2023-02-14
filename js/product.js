@@ -1,10 +1,36 @@
 $(() => {
+    // 상단 메뉴
+    toggleHeaderProductMenu(false);
+
+    function toggleHeaderProductMenu(toggle) {
+        if(toggle) {
+            $('header').css({
+                height: '164px'
+            });
+            $('#header_inner').css({
+                height: '164px',
+                boxShadow: '4px 0 10px 0 rgb(0 0 0 / 10%)'
+            });
+
+            $('#product_menu').show();
+        }
+        else {
+            $('header').css({
+                height: '100px'
+            });
+            $('#header_inner').css({
+                height: '100px',
+                boxShadow: 'none'
+            });
+
+            $('#product_menu').hide();
+        }
+    }
+
     // 스크롤 시 영역 안에서만 이미지 움직이기
     $(window).scroll(function () {
         let contentHeight = $('#product_detail').height();
         let imageHeight = $('#product_detail_left_inner').height();
-
-        console.log(imageHeight);
 
         if($(this).scrollTop() >= contentHeight - imageHeight - 30) {
             $('#product_detail_left_inner').css({
@@ -19,6 +45,13 @@ $(() => {
                 top: 120,
                 left: 330
             });
+        }
+
+        if($(this).scrollTop() > 400) {
+            toggleHeaderProductMenu(true);
+        }
+        else {
+            toggleHeaderProductMenu(false);
         }
     });
 
