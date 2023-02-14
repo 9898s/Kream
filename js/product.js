@@ -6,18 +6,18 @@ $(() => {
 
         console.log(imageHeight);
 
-        if($(this).scrollTop() >= contentHeight - imageHeight + 6) {
+        if($(this).scrollTop() >= contentHeight - imageHeight - 30) {
             $('#product_detail_left_inner').css({
                 position: 'absolute',
                 top: contentHeight - 490,
-                left: 215
+                left: 330
             });
         }
         else {
             $('#product_detail_left_inner').css({
                 position: 'fixed',
-                top: 70,
-                left: 215
+                top: 120,
+                left: 330
             });
         }
     });
@@ -29,14 +29,14 @@ $(() => {
 
         if(oldIndex != index) {
             $('.info_area').hide();
-            $('#product_detail').height(1620);
+            $('#product_detail').height(1680);
             $(this).children('.info_area').show();
             $(this).css('font-weight', '600');
             oldIndex = index;
         }
         else {
             $('.info_area').hide();
-            $('#product_detail').height(1315);
+            $('#product_detail').height(1350);
             $(this).css('font-weight', '400');
             oldIndex = -1;
         }
