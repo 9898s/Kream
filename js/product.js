@@ -63,6 +63,7 @@ $(() => {
         if(oldIndex != index) {
             $('.info_area').hide();
             $('#product_detail').height(1680);
+            $('.info_list').css('font-weight', '400');
             $(this).children('.info_area').show();
             $(this).css('font-weight', '600');
             oldIndex = index;
