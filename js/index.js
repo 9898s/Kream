@@ -32,17 +32,17 @@ $(() => {
 
     // 상품 더보기 버튼 클릭
     $('#just_dropped li').each(function (index) {
-        if(parseInt(index / 4) > 0) {
+        if (parseInt(index / 4) > 0) {
             $(this).hide();
         }
     });
     $('#most_popular li').each(function (index) {
-        if(parseInt(index / 4) > 0) {
+        if (parseInt(index / 4) > 0) {
             $(this).hide();
         }
     });
     $('#upcoming_release li').each(function (index) {
-        if(parseInt(index / 4) > 0) {
+        if (parseInt(index / 4) > 0) {
             $(this).hide();
         }
     });
@@ -50,11 +50,11 @@ $(() => {
     let moreArray = [0, 0, 0];
     $('#just_dropped .product_btn').click(function () {
         moreArray[0]++;
-        if(moreArray[0] == 2) {
+        if (moreArray[0] == 2) {
             $(this).hide();
         }
         $('#just_dropped li').each(function (index) {
-            if(parseInt(index / 4) == moreArray[0]) {
+            if (parseInt(index / 4) == moreArray[0]) {
                 $(this).show();
             }
         });
@@ -62,11 +62,11 @@ $(() => {
 
     $('#most_popular .product_btn').click(function () {
         moreArray[1]++;
-        if(moreArray[1] == 2) {
+        if (moreArray[1] == 2) {
             $(this).hide();
         }
         $('#most_popular li').each(function (index) {
-            if(parseInt(index / 4) == moreArray[1]) {
+            if (parseInt(index / 4) == moreArray[1]) {
                 $(this).show();
             }
         });
@@ -74,13 +74,47 @@ $(() => {
 
     $('#upcoming_release .product_btn').click(function () {
         moreArray[2]++;
-        if(moreArray[2] == 2) {
+        if (moreArray[2] == 2) {
             $(this).hide();
         }
         $('#upcoming_release li').each(function (index) {
-            if(parseInt(index / 4) == moreArray[2]) {
+            if (parseInt(index / 4) == moreArray[2]) {
                 $(this).show();
             }
         });
     });
+
+    // 배너 슬라이드 영역
+    let index = 0, autoTimer;
+    $('#banner_slider').click(function () {
+        index++;
+        moveSlider(index);
+    });
+
+    $('#banner_slider').hover(function () {
+        clearInterval(autoTimer);
+    }, function () {
+        autoTimer = setInterval(() => {
+            index++;
+            moveSlider(index);
+        }, 3000);
+    });
+
+    autoTimer = setInterval(() => {
+        index++;
+        moveSlider(index);
+    }, 3000);
+
+    function moveSlider(pos) {
+        if (pos > $('.slider_panel').length + 1) {
+            pos = 0;
+            index = 0;
+        }
+
+        $('.slider_panel').stop().animate({
+            left: -pos * 100 + '%'
+        }, 'slow');
+
+        console.log(pos);
+    }
 });
