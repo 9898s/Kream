@@ -32,10 +32,10 @@ $(() => {
         let contentHeight = $('#product_detail').height();
         let imageHeight = $('#product_detail_left_inner').height();
 
-        if($(this).scrollTop() >= contentHeight - imageHeight - 30) {
+        if($(this).scrollTop() >= contentHeight - imageHeight) {
             $('#product_detail_left_inner').css({
                 position: 'absolute',
-                top: contentHeight - 490,
+                top: contentHeight - 440,
                 left: 330
             });
         }
