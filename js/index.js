@@ -86,9 +86,14 @@ $(() => {
 
     // 배너 슬라이드 영역
     let index = 0, autoTimer;
-    $('#banner_slider').click(function () {
+    $('.banner_slide_right').click(function () {
         index++;
-        moveSlider(index);
+        moveSlider();
+    });
+
+    $('.banner_slide_left').click(function () {
+        index--;
+        moveSlider();
     });
 
     $('#banner_slider').hover(function () {
@@ -96,7 +101,7 @@ $(() => {
     }, function () {
         autoTimer = setInterval(() => {
             index++;
-            moveSlider(index);
+            moveSlider();
         }, 3000);
     });
 
@@ -105,16 +110,16 @@ $(() => {
         moveSlider(index);
     }, 3000);
 
-    function moveSlider(pos) {
-        if (pos > $('.slider_panel').length + 1) {
-            pos = 0;
+    function moveSlider() {
+        if (index >= $('.slide').length) {
             index = 0;
+        }
+        else if (index < 0) {
+            index = $('.slide').length - 1;
         }
 
         $('.slider_panel').stop().animate({
-            left: -pos * 100 + '%'
+            left: -index * 100 + '%'
         }, 'slow');
-
-        console.log(pos);
     }
 });
