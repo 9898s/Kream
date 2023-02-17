@@ -30,20 +30,18 @@ $(() => {
     // 스크롤 시 영역 안에서만 이미지 움직이기
     $(window).scroll(function () {
         let contentHeight = $('#product_detail').height();
-        let imageHeight = $('#product_detail_left_inner').height();
+        let imageHeight = $('#product_detail_left_img').height();
 
-        if($(this).scrollTop() >= contentHeight - imageHeight) {
-            $('#product_detail_left_inner').css({
+        if($(this).scrollTop() >= contentHeight - imageHeight + 73) {
+            $('#product_detail_left_img').css({
                 position: 'absolute',
-                top: contentHeight - 440,
-                left: 330
+                top: contentHeight - imageHeight
             });
         }
         else {
-            $('#product_detail_left_inner').css({
+            $('#product_detail_left_img').css({
                 position: 'fixed',
-                top: 120,
-                left: 330
+                top: 100
             });
         }
 
