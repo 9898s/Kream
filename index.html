@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>인덱스</title>
 
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -62,7 +62,7 @@
   <!-- content 영역 -->
   <div id="content">
     <!-- banner_slider 영역 -->
-    <section id="banner_slider">
+    <div id="banner_slider">
       <div class="slider_arrow_area">
         <img src="images/right-arrow.svg" alt="오른쪽 슬라이드" class="banner_slide_right">
         <img src="images/left-arrow.svg" alt="왼쪽 슬라이드" class="banner_slide_left">
@@ -84,10 +84,10 @@
           </div>
         </a>
       </div>
-    </section>
+    </div>
 
     <!-- collection 영역 -->
-    <section id="collection">
+    <div id="collection">
       <div class="shortcut">
         <ul>
           <li>
@@ -152,7 +152,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </div>
 
     <!-- products 영역 -->
     <section id="just_dropped" class="products">
@@ -445,8 +445,8 @@
     </section>
 
     <!-- banner 영역 -->
-    <section class="banner">
-    </section>
+    <div class="banner">
+    </div>
 
     <!-- most_popular 영역 -->
     <section id="most_popular" class="products">
@@ -711,8 +711,8 @@
     </section>
 
     <!-- banner 영역 -->
-    <section class="banner">
-    </section>
+    <div class="banner">
+    </div>
 
     <!-- upcoming_release 영역 -->
     <section id="upcoming_release" class="products">
@@ -898,8 +898,8 @@
     <!-- footer 영역 -->
     <footer>
       <!-- footer_top 영역 -->
-      <section id="footer_top">
-        <article class="footer_service">
+      <div id="footer_top">
+        <div class="footer_service">
           <a href="#">
             <div class="footer_top_inner">
               <p class="footer_title">
@@ -915,8 +915,8 @@
               </p>
             </div>
           </a>
-        </article>
-        <article class="footer_app">
+        </div>
+        <div class="footer_app">
           <a href="#">
             <div class="footer_top_inner">
               <p class="footer_title">
@@ -932,11 +932,11 @@
               </p>
             </div>
           </a>
-        </article>
-      </section>
+        </div>
+      </div>
 
       <!-- footer_support 영역 -->
-      <section id="footer_support">
+      <div id="footer_support">
         <div id="footer_support_inner">
           <div id="footer_support_left">
             <div id="footer_information">
@@ -982,9 +982,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section id="footer_bottom">
+      <div id="footer_bottom">
         <div id="footer_bottom_inner">
           <ul class="term_list">
             <li><a href="#">회사소개</a></li>
@@ -1029,13 +1029,11 @@
 
           <address>&copy;KREAM Corp.</address>
         </div>
-      </section>
+      </div>
     </footer>
 
-    <button id="top_btn">
-      <a href="#">
-        <img src="images/up-arrow.png" alt="위로가기">
-      </a>
+    <button id="top_btn" onclick="location.href='#';">
+      <img src="images/up-arrow.png" alt="위로가기">
     </button>
   </div>
 </body>

@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>상품</title>
 
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/product.css">
 
   <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/index.js"></script>
   <script src="js/product.js"></script>
 </head>
 
@@ -84,7 +85,7 @@
 
   <!-- content 영역 -->
   <div id="content">
-    <section id="product_detail">
+    <div id="product_detail">
       <div id="product_detail_left">
         <div id="product_detail_left_inner">
           <div id="product_detail_left_img">
@@ -279,7 +280,7 @@
           크림(주)는 통신판매 중개자로서 통신판매의 당사자가 아닙니다. 본 상품은 개별판매자가 등록한 상품으로 상품, 상품정보, 거래에 관한 의무와 책임은 각 판매자에게 있습니다. 단, 이용약관 및 정책, 기타 거래 체결 과정에서 고지하는 내용 등에 따라 검수하고 보증하는 내용에 대한 책임은 크림(주)에 있습니다
         </p>
       </div>
-    </section>
+    </div>
 
     <section id="style">
       <h2>스타일 0</h2>
@@ -379,8 +380,8 @@
   <!-- footer 영역 -->
   <footer>
     <!-- footer_top 영역 -->
-    <section id="footer_top">
-      <article class="footer_service">
+    <div id="footer_top">
+      <div class="footer_service">
         <a href="#">
           <div class="footer_top_inner">
             <p class="footer_title">
@@ -396,8 +397,8 @@
             </p>
           </div>
         </a>
-      </article>
-      <article class="footer_app">
+      </div>
+      <div class="footer_app">
         <a href="#">
           <div class="footer_top_inner">
             <p class="footer_title">
@@ -413,11 +414,11 @@
             </p>
           </div>
         </a>
-      </article>
-    </section>
+      </div>
+    </div>
 
     <!-- footer_support 영역 -->
-    <section id="footer_support">
+    <div id="footer_support">
       <div id="footer_support_inner">
         <div id="footer_support_left">
           <div id="footer_information">
@@ -463,9 +464,9 @@
           </p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="footer_bottom">
+    <div id="footer_bottom">
       <div id="footer_bottom_inner">
         <ul class="term_list">
           <li><a href="#">회사소개</a></li>
@@ -511,13 +512,11 @@
 
         <address>&copy;KREAM Corp.</address>
       </div>
-    </section>
+    </div>
   </footer>
 
-  <button id="top_btn">
-    <a href="#">
-      <img src="images/up-arrow.png" alt="위로가기">
-    </a>
+  <button id="top_btn" onclick="location.href='#';">
+    <img src="images/up-arrow.png" alt="위로가기">
   </button>
 </body>
 
