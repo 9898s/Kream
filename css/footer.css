@@ -34,7 +34,7 @@ footer {
 }
 
 .footer_top_inner {
-    padding: 36px 32px;
+    padding: 36px 48px;
 }
 
 .footer_title {
@@ -257,6 +257,7 @@ address {
     z-index: 999;
     border: none;
     display: none;
+    cursor: pointer;
 }
 
 #top_btn img {
